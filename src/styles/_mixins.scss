@@ -1,0 +1,39 @@
+@use "@/styles/variables" as *;
+
+// ========================
+// 📱 Responsive Mixins
+// ========================
+@mixin mobile {
+    @media (max-width: #{$mobile - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+// ========================
+// ⚙️ Flexbox Helpers
+// ========================
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    & {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
