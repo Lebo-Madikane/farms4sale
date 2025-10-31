@@ -1,14 +1,32 @@
-// Colour Pallate
-:root {
-    --primary-color: #2c5530;
-    --secondary-color: #f5f5f5;
-    --accent-color: #d4a574;
-    --text-dark: #333333;
-    --text-light: #666666;
-    --white: #ffffff;
-    --success: #28a745;
-    --error: #dc3545;
-}
+// Sass built-in modules
+@use "sass:color";
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+
+
+// Color palette
+$color-primary: #2e7d32; // example green — adjust from Figma
+$color-primary-dark: #245e27;
+$color-secondary: #f5f5f5; // light background
+$color-accent: #ff9800; // example accent (e.g., buttons)
+$color-text: #333333;
+$color-text-light: #777777;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Neutrals
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-gray-dark: #333333;
+$color-gray-medium: #666666;
+$color-gray-light: #CCCCCC;
+$color-gray-lighter: #F5F5F5;
+
+// Background Colors
+$bg-hero: #E8E8E8; // Light gray for hero
+$bg-light: #FAFAFA;
+$bg-dark: $color-gray-dark;
 
 // Typography
 $font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;

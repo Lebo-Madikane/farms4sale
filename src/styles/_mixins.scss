@@ -37,3 +37,16 @@
         align-items: center;
     }
 }
+
+// ========================
+// 🧱 Container Wrapper
+// ========================
+@mixin container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include desktop {
+        padding: 0 2rem;
+    }
+}
